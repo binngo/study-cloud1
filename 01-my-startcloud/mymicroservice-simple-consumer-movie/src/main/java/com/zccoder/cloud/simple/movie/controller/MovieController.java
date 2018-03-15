@@ -19,7 +19,7 @@ public class MovieController {
 	
 	@Autowired
 	private RestTemplate restTemplate;
-	@Value("user.userServiceUrl")
+	@Value("${user.userServiceUrl}")
 	private String userServiceUrl;
 	
 	@GetMapping("/user/{id}")
